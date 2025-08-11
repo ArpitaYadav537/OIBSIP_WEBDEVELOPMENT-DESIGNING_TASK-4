@@ -1,0 +1,141 @@
+Body {
+    Font-family: ‘Segoe UI’, Tahoma, Geneva, Verdana, sans-serif;
+    Background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    Display: flex;
+    Justify-content: center;
+    Align-items: center;
+    Min-height: 100vh;
+    Margin: 0;
+    Color: #333;
+}
+
+.container {
+    Background-color: #ffffff;
+    Padding: 40px;
+    Border-radius: 10px;
+    Box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    Text-align: center;
+    Width: 100%;
+    Max-width: 400px;
+    Box-sizing: border-box;
+    Animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    From { opacity: 0; transform: translateY(-20px); }
+    To { opacity: 1; transform: translateY(0); }
+}
+
+H1 {
+    Color: #333;
+    Margin-bottom: 30px;
+    Font-size: 2.5em;
+}
+
+.form-card {
+    Background-color: #f9f9f9;
+    Padding: 30px;
+    Border-radius: 8px;
+    Box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    Margin-bottom: 20px;
+}
+
+H2 {
+    Color: #555;
+    Margin-bottom: 25px;
+    Font-size: 1.8em;
+}
+
+.input-group {
+    Margin-bottom: 20px;
+    Text-align: left;
+}
+
+Label {
+    Display: block;
+    Margin-bottom: 8px;
+    Font-weight: bold;
+    Color: #666;
+}
+
+Input[type=”text”],
+Input[type=”password”] {
+    Width: calc(100% - 20px);
+    Padding: 12px 10px;
+    Border: 1px solid #ddd;
+    Border-radius: 5px;
+    Font-size: 1em;
+    Box-sizing: border-box;
+    Transition: border-color 0.3s ease;
+}
+
+Input[type=”text”]:focus,
+Input[type=”password”]:focus {
+    Border-color: #71b7e6;
+    Outline: none;
+    Box-shadow: 0 0 5px rgba(113, 183, 230, 0.5);
+}
+
+Button {
+    Background-color: #9b59b6;
+    Color: white;
+    Padding: 12px 25px;
+    Border: none;
+    Border-radius: 5px;
+    Font-size: 1.1em;
+    Cursor: pointer;
+    Transition: background-color 0.3s ease, transform 0.2s ease;
+    Width: 100%;
+    Box-sizing: border-box;
+}
+
+Button:hover {
+    Background-color: #8e44ad;
+    Transform: translateY(-2px);
+}
+
+.toggle-link {
+    Margin-top: 20px;
+    Font-size: 0.9em;
+    Color: #666;
+}
+
+.toggle-link a {
+    Color: #71b7e6;
+    Text-decoration: none;
+    Font-weight: bold;
+    Transition: color 0.3s ease;
+}
+
+.toggle-link a:hover {
+    Color: #5a9ed1;
+    Text-decoration: underline;
+}
+
+#secured-section {
+    Background-color: #e6ffe6;
+    Padding: 30px;
+    Border-radius: 8px;
+    Box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    Color: #333;
+    Animation: slideIn 0.8s ease-out;
+}
+
+@keyframes slideIn {
+    From { opacity: 0; transform: translateX(50px); }
+    To { opacity: 1; transform: translateX(0); }
+}
+
+#secured-section h2 {
+    Color: #28a745;
+    Margin-bottom: 15px;
+}
+
+#logout-btn {
+    Background-color: #dc3545;
+    Margin-top: 20px;
+}
+
+#logout-btn:hover {
+    Background-color: #c82333;
+}

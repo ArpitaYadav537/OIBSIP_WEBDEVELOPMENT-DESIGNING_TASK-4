@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Auth System (LocalStorage)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome!</h1>
+
+        <div id="auth-section">
+            <div class="form-card" id="register-card">
+                <h2>Register</h2>
+                <form id="register-form">
+                    <div class="input-group">
+                        <label for="reg-username">Username:</label>
+                        <input type="text" id="reg-username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="reg-password">Password:</label>
+                        <input type="password" id="reg-password" required>
+                    </div>
+                    <button type="submit">Register</button>
+                    <p class="toggle-link">Already have an account? <a href="#" id="show-login">Login</a></p>
+                </form>
+            </div>
+
+            <div class="form-card" id="login-card" style="display: none;">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <div class="input-group">
+                        <label for="login-username">Username:</label>
+                        <input type="text" id="login-username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit">Login</button>
+                    <p class="toggle-link">Don't have an account? <a href="#" id="show-register">Register</a></p>
+                </form>
+            </div>
+        </div>
+
+        <div id="secured-section" style="display: none;">
+            <h2>Welcome to the Secured Page!</h2>
+            <p>You have successfully logged in.</p>
+            <button id="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
